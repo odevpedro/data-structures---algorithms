@@ -19,11 +19,13 @@ public class Main {
         //and another
         Array number = new Array(3);
         number.insert(10);
-        number.insert(10);
-        number.insert(10);
-        number.insert(10);
-        number.removeAT(10);
-        System.out.println(number.indexOf(100));
+        number.insert(20);
+        number.insert(40);
+        number.insert(70);
+        number.insert(92);
+
+        number.removeAt(40);
+        number.print();
 
 
 
