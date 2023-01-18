@@ -8,7 +8,7 @@ public class Array {
         items = new int[length];
     }
 
-        public void insert(int item){
+    public void insert(int item){
                 //If the array is full, resize it
                 if (items.length == count){
 
@@ -28,7 +28,7 @@ public class Array {
     }
 
 
-        public void removeAt(int index){
+    public void removeAt(int index){
         // validate the index
             if (index < 0 || index >= count)
                 throw new IllegalArgumentException();
@@ -44,6 +44,15 @@ public class Array {
         for (int i = 0; i < count; i++){ //increment count every time that a new item are insert in this array
             System.out.println(items[i]);
         }
+    }
+
+    public int indexOf(int item){
+        //If we find , return index
+        //Otherwise, return -1
+        for (int i =0; i < count; i++)
+            if (items[i] == item)
+                return i;
+        return -1;
     }
 
 
